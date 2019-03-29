@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is a website that still has hard coded pixels for media queries, whereas a responsive layout has responsive units that adapt to the screen size as it gets larger or smaller. Layout widths are hard coded in adaptive websites and are not coded in responsive websites.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+To be mobile first is to design the website's features and layout around mobile viewing size first, building up from them to the desktop size. 
+To be desktop first is to design the website's features and layout around desktop viewing size first, building down from them to mobile size.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+If we take the browser's default font-size (`16px`), then setting the font-size for the entire webpage to be 62.5% of that, we would have changed the text to be `10px` in size. Whereas `em` units' size is relative to the size of the parent container, `rem` units are relative to the size defined by the `html` tag. The `rem` units act as a percentage of the size of the `html` tag, so `1rem` in our 62.5% `html` tag would be `10px`, `1.7rem` would be `17px`, and `3.3rem` would be `33px`. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is like a computer for your computer - It takes all of the information you put into it and sorts it into the correct areas it needs to go into the CSS. You can have multiple .less files that all have different bits of your CSS on them, and with the correct syntax in the index.less file (the `@import` tag), all of it will be compiled into one css file and the css file will function exactly as it would if you had coded it yourself.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is being able to sort out my website's styles into their own .less files (one for navigation, one for a header, etc.), so I can work on those sections individually. The concept that gives me the most trouble is parametric mixins, I still need to figure out how the parameters work in the () tag so that I can style them correctly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
