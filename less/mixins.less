@@ -1,1 +1,37 @@
 // Mixins Here
+
+.decor() {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.buttonsize() {
+    height: 30px;
+    width: 90px;
+    @media @phone {
+        width: 100%;
+        height: 75px;
+    }
+}
+.buttondecor(@bgcolor: black, @fcolor: white) {
+    font-size: 1.55rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background: @bgcolor;
+    color: @fcolor;
+    &:hover {
+        background: @fcolor;
+        color: @bgcolor;
+        border: 1px solid black;
+    }
+}
+
+.contentflexing (@justify: center, @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.contentflowing (@direct: column, @wrap: wrap) {
+    flex-direction: @direct;
+    flex-wrap: @wrap;
+}
