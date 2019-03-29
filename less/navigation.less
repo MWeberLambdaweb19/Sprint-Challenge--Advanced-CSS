@@ -1,19 +1,46 @@
 // Navigation code here
 .spacenavstyle {
-    width: 100%;
+    width: 1000px;
     color: #22283B;
     background: #f4f4f4;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
+    margin: 0 auto;
+    margin-bottom:10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    @media @phone {
+        width: 100%;
+        .contentflexing(center, center);
+        .contentflowing(column, nowrap);
+        padding-bottom: 10px;
+    }
 }
 .spacenav {
     // display: flex;
     .contentflexing(center, center);
     .contentflowing(row, nowrap);
     a {
+        @media @phone {
+            margin-left: 15px;
+            margin-right: 15px;
+            &:first-child {
+                margin-right: 17px;
+            }
+            &:last-child {
+                margin-left: 17px;
+            }
+        }
         .decor();
         margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 13px;
+        margin-right: 13px;
+        &:first-child {
+            margin-right: 17px;
+        }
+        &:last-child {
+            margin-left: 17px;
+        }
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -24,4 +51,7 @@ h1 {
     .contentflexing(center, center);
     font-size: 3rem;
     margin-bottom: 10px;
+    @media @phone {
+        font-size: 4rem;
+    }
 }

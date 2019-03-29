@@ -8,6 +8,10 @@
 .buttonsize() {
     height: 30px;
     width: 90px;
+    @media @phone {
+        width: 100%;
+        height: 75px;
+    }
 }
 .buttondecor(@bgcolor: black, @fcolor: white) {
     font-size: 1.55rem;
