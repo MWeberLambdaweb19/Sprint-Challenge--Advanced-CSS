@@ -165,8 +165,6 @@ p {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
 }
 .spacenav {
   display: flex;
@@ -185,12 +183,14 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-weight: bold;
 }
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 footer {
   color: #22283B;
@@ -243,6 +243,28 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  height: 30px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.55rem;
+  font-weight: 600;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+.home .walk .walk-text .spacebtn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
 }
 .home .walk .walk-img {
   width: 46%;
