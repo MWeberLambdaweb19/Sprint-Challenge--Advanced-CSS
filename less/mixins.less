@@ -1,1 +1,17 @@
 // Mixins Here
+
+.decor() {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contentflexing (@justify: center, @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.contentflowing (@direct: column, @wrap: wrap) {
+    flex-direction: @direct;
+    flex-wrap: @wrap;
+}

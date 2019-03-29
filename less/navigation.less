@@ -1,1 +1,27 @@
 // Navigation code here
+.spacenavstyle {
+    width: 100%;
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 20px 0;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+}
+.spacenav {
+    // display: flex;
+    .contentflexing(center, center);
+    .contentflowing(row, nowrap);
+    a {
+        .decor();
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+h1 {
+    .contentflexing(center, center);
+    font-size: 3rem;
+}
